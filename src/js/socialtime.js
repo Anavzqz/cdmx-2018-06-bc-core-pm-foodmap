@@ -54,7 +54,7 @@ function initMap(){
     });
     addMarker({coords: {lat: 19.427, lng: -99.1677,}});
     addMarker({coords: {lat: 19.427, lng: -99.1677,}});
-
+}
     function addMarker(coords){
         let marker = new google.maps.Marker({
             position: props.coords,
@@ -76,4 +76,3 @@ function initMap(){
             });
         }
     }
-}
