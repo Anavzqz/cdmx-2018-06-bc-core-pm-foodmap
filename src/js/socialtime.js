@@ -1,18 +1,18 @@
 function initMap(){
-    let options = {//Opciones del mapa
-        zoom: 5,
-        center: {lat: 19.2542, lng: -99.0739,}
-    }
     //Nuevo mapa
     let map = new
-    google.maps.Map(document.getElementById('map'), options);
+    google.maps.Map(document.getElementById('map'), {
+        center: {lat: 19.2542, lng: -99.0739},
+        zoom:16
+    });
+    
 
     //Click mapa
     google.maps.event.addListener(map, 'click', function(event){
         //Agregando marcadores
         addMarker({coords: event.latLng});
-    })
-
+    });
+};
     /*let marker = new
     google.maps.Marker({
         position: {lat: 19.427, lng: -99.1677,},
@@ -20,7 +20,7 @@ function initMap(){
         
     });*/
 
-    let infoWindow = new google.maps.infoWindow({
+    /*let infoWindow = new google.maps.infoWindow({
         content: '<h1>CDMX</h1>'
     });
 
@@ -54,7 +54,7 @@ function initMap(){
     });
     addMarker({coords: {lat: 19.427, lng: -99.1677,}});
     addMarker({coords: {lat: 19.427, lng: -99.1677,}});
-}
+
     function addMarker(coords){
         let marker = new google.maps.Marker({
             position: props.coords,
@@ -76,3 +76,10 @@ function initMap(){
             });
         }
     }
+*/
+let inSearch = document.getElementById("search");
+let btnSearch = document.getElementById("buscar");
+
+btnSearch.addEventListener("click", (event) => {
+
+});
