@@ -9,8 +9,7 @@
     </head>
 
     <body>
-        <h1>Gourmap</h1>
-
+        <center> <h1 class="navbar-fixed">Gourmap</h1> </center>
            <div id="map"></div>
 
         <script async defer
@@ -18,9 +17,14 @@
         </script>
 
         <div class="i">
-            <input type="text" id="search">
-            <button type="button" id="Buscar"></button>
+          
+            <input type="text" id="search" placeholder="Tipo de comida">
+            <button type="button" id="Buscar">Buscar</button>
         </div>
+
+        <div class="modal" id="mod" name="mod"></div>
+
+        <script src="../js/data.js"></script>
 
         <script src="../js/socialtime.js"></script>
     </body>
