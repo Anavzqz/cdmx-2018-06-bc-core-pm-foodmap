@@ -81,8 +81,8 @@ btnSearch.addEventListener("click", event => {
         <h1>Nombre: ${data.mexicana.name}</h1>
         <p>Direccion: ${data.mexicana.direction}</p>
         `
-    }else(inSearch == 'japonesa') {
-        paint.innerHTML = `
+    }else(inSearch == 'japonesa') 
+    {paint.innerHTML = `
         <h1>Nombre: ${data.japonesa.name}</h1>
         <p>Direccion: ${data.japonesa.direction}</p>
         `
